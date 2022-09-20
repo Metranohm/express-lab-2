@@ -1,0 +1,12 @@
+<body>
+  <h1>Students</h1>
+  <ul>
+    <% students.forEach(student => { %>
+      <li>
+				<%= student.text %> 
+				- 
+				<%= student.enrolled ? 'enrolled' : 'graduated' %>
+			</li>
+    <% }) %>
+  </ul>
+</body>
